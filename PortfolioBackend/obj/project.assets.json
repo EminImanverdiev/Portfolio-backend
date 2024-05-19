@@ -2578,11 +2578,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Workspace\\Portfolio-Website-Back\\PortfolioBackend\\PortfolioBackend.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\PortfolioBackend.csproj",
       "projectName": "PortfolioBackend",
-      "projectPath": "D:\\Workspace\\Portfolio-Website-Back\\PortfolioBackend\\PortfolioBackend.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\PortfolioBackend.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "D:\\Workspace\\Portfolio-Website-Back\\PortfolioBackend\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
