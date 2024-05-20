@@ -7,9 +7,10 @@ namespace PortfolioBackend.Validators.Abouts
     {
         public CreateAboutValidator()
         {
-            RuleFor(a => a.Title)
-                .NotEmpty().WithMessage("Title must not be empty!")
-                .NotNull().WithMessage("Title must not be null!");
+        //    RuleFor(a => a.Title)
+        //        .NotEmpty().WithMessage("Title must not be empty!")
+        //        .MaximumLength(100).WithMessage("Title must not exceed 100 characters!");
+        //
         }
     }
-}
+    }

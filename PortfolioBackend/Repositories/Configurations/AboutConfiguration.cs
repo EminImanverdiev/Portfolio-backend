@@ -11,8 +11,7 @@ namespace PortfolioBackend.Repositories.Configurations
         {
             builder.Property(a => a.Title)
                 .IsRequired()
-                .HasDefaultValue("System Admin")
-                .HasColumnType(SqlDbType.NVarChar.ToString());
+                .HasMaxLength(300);
 
         }
     }

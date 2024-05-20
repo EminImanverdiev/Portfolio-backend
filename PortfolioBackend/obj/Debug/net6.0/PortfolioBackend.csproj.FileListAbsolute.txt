@@ -83,6 +83,9 @@ C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Fluent
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Humanizer.dll
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -91,6 +94,8 @@ C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Micros
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.Identity.Client.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll

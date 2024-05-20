@@ -1,5 +1,7 @@
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using PortfolioBackend.Entities.Auth;
 using PortfolioBackend.Repositories.EFcore;
 using System.Reflection;
 
@@ -27,6 +29,9 @@ namespace PortfolioBackend
                 opt.UseSqlServer(builder.Configuration["ConnectionStrings:Default"]);
             });
             builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());
+            builder.Services.AddIdentity<AppUser, IdentityRole>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddDefaultTokenProviders();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -35,7 +40,7 @@ namespace PortfolioBackend
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-
+                
             app.UseHttpsRedirection();
 
             app.UseAuthorization();

@@ -1,10 +1,12 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using PortfolioBackend.Entities;
+using PortfolioBackend.Entities.Auth;
 using System.Reflection;
 
 namespace PortfolioBackend.Repositories.EFcore
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options){}
         protected override void OnModelCreating(ModelBuilder modelBuilder)
