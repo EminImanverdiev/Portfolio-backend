@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -40,6 +41,7 @@ namespace PortfolioBackend.Controllers
             
         }
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Create(CreateAboutDto aboutDto)
         {
             About about =_mapper.Map<About>(aboutDto);

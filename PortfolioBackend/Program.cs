@@ -1,9 +1,12 @@
 using FluentValidation.AspNetCore;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
 using PortfolioBackend.Entities.Auth;
 using PortfolioBackend.Repositories.EFcore;
 using System.Reflection;
+using System.Text;
 
 namespace PortfolioBackend
 {
@@ -14,7 +17,7 @@ namespace PortfolioBackend
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
-
+            TokenOption tokenOption = builder.Configuration.GetSection("TokenOptions").Get<TokenOption>();
             builder.Services.AddControllers().AddFluentValidation(opt =>
             {
                 opt.ImplicitlyValidateChildProperties = true;
@@ -32,6 +35,24 @@ namespace PortfolioBackend
             builder.Services.AddIdentity<AppUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppDbContext>()
                 .AddDefaultTokenProviders();
+            builder.Services.AddAuthentication(opt =>
+            {
+                opt.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+                opt.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+                opt.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(opt =>
+            {
+                opt.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = tokenOption.Issuer,
+                    ValidAudience = tokenOption.Audience,
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenOption.SecurityKey))
+                };
+            });
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -42,6 +63,7 @@ namespace PortfolioBackend
             }
                 
             app.UseHttpsRedirection();
+            app.UseAuthentication();
 
             app.UseAuthorization();
 

@@ -9,6 +9,7 @@ namespace PortfolioBackend.Profiles
         public AuthProfile()
         {
             CreateMap<RegisterDto, AppUser>();
+            CreateMap<LoginDto, AppUser>();
         }
     }
 }
