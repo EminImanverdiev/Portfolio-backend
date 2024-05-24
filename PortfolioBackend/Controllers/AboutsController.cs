@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using PortfolioBackend.DAL.Repositories.Abstracts;
 using PortfolioBackend.Entities;
 using PortfolioBackend.Entities.DTOs.Abouts;
 using PortfolioBackend.Repositories.EFcore;
@@ -13,19 +14,19 @@ namespace PortfolioBackend.Controllers
     [ApiController]
     public class AboutsController : ControllerBase
     {
-        private readonly AppDbContext _context;
+        private readonly IAboutRepository _aboutRepository;
         private readonly IMapper _mapper;
 
-        public AboutsController(AppDbContext context,IMapper mapper)
+        public AboutsController(IAboutRepository aboutRepository, IMapper mapper)
         {
-            _context = context;
+            _aboutRepository = aboutRepository;
             _mapper = mapper;
         }
         [HttpGet("GetAbouts")]
 
         public async Task<IActionResult> GetAbouts()
         {
-            var result = await _context.Abouts.ToListAsync();
+            var result = await _aboutRepository.GetAllAsync();
             List<GetAboutDto> getaboutdtos=_mapper.Map<List<GetAboutDto>>(result);
             if(result.Count==0)return NotFound();
             return Ok(getaboutdtos);
@@ -34,7 +35,7 @@ namespace PortfolioBackend.Controllers
         [HttpGet("GetAbout/{Id}")]
         public async Task<IActionResult> GetAbout(int Id)
         {
-            var result = await _context.Abouts.Where(a=>a.Id==Id).FirstOrDefaultAsync();
+            var result = await _aboutRepository.GetAsync(a => a.Id == Id);
             GetAboutDto getAboutDto=_mapper.Map<GetAboutDto>(result);   
             if (result is null) return NotFound();
             return Ok(getAboutDto);
@@ -45,34 +46,38 @@ namespace PortfolioBackend.Controllers
         public async Task<IActionResult> Create(CreateAboutDto aboutDto)
         {
             About about =_mapper.Map<About>(aboutDto);
-            await _context.Abouts.AddAsync(about);
-            await _context.SaveChangesAsync();  
+            await _aboutRepository.AddAsync(about);
+            await _aboutRepository.SaveAsync(); 
             return NoContent();
         }
         [HttpPut]
         public async Task<IActionResult> Update(UpdateAboutDto aboutDto)
         {
-            if (!AboutExists(aboutDto.Id)) return NotFound();
+            if (!await AboutExists(aboutDto.Id)) return NotFound();
            
             About about = _mapper.Map<About>(aboutDto);
-             _context.Abouts.Update(about);
-            await _context.SaveChangesAsync();
+              _aboutRepository.Update(about);
+            await _aboutRepository.SaveAsync();
             return NoContent();
         }
         [HttpDelete]
         public async Task<IActionResult> Delete(int Id)
         {
-            var result=await _context.Abouts.FindAsync(Id);
+            if (_aboutRepository.GetAllAsync() == null)
+            {
+                return NotFound();
+            }
+            var result = await _aboutRepository.GetAsync(a => a.Id == Id);
             if (result is null) return BadRequest();
-            _context.Abouts.Remove(result);
-            await _context.SaveChangesAsync();
+             _aboutRepository.Delete(result);
+            await _aboutRepository.SaveAsync();
             return NoContent();
 
         }
-        private bool AboutExists(int Id)
-        {
-            return _context.Abouts.Any(a => a.Id == Id);
-        }
-
+        private Task<bool> AboutExists(int Id)
+    {
+        return _aboutRepository.IsExistsAsync(a => a.Id == Id);
     }
+
+}
 }

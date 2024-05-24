@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using PortfolioBackend.DAL.Repositories.Abstracts;
+using PortfolioBackend.DAL.Repositories.Concretes.EFCore;
 using PortfolioBackend.Entities.Auth;
 using PortfolioBackend.Repositories.EFcore;
 using System.Reflection;
@@ -53,6 +55,7 @@ namespace PortfolioBackend
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenOption.SecurityKey))
                 };
             });
+            builder.Services.AddScoped<IAboutRepository, EFAboutRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
