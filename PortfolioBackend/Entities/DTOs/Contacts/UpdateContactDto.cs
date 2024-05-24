@@ -1,11 +1,11 @@
-﻿namespace PortfolioBackend.Entities
+﻿namespace PortfolioBackend.Entities.DTOs.Contacts
 {
-    public class Contact
-    {
+    public class UpdateContactDto {
         public int ContactId { get; set; }
         public string? ContactTitle { get; set; }
         public string? ContactEmail { get; set; }
         public string? ContactLocation { get; set; }
         public string? ContactNumber { get; set; }
     }
+
 }
