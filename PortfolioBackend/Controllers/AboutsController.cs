@@ -23,7 +23,6 @@ namespace PortfolioBackend.Controllers
             _mapper = mapper;
         }
         [HttpGet("GetAbouts")]
-
         public async Task<IActionResult> GetAbouts()
         {
             var result = await _aboutRepository.GetAllAsync();

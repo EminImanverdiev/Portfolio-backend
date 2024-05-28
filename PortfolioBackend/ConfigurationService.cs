@@ -46,6 +46,8 @@ namespace PortfolioBackend
             services.AddScoped<IAboutRepository, EFAboutRepository>();
             services.AddScoped<IContactRepository, EFContactRepository>();
             services.AddScoped<IServiceRepository, EFServiceRepository>();
+            services.AddScoped<IContactFormRepository, EFContactFormRepository>();
+            services.AddScoped<ITestimonialRepository, EFTestimonialRepository>();
             return services;
         }
     }

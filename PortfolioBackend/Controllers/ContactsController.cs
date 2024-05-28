@@ -6,6 +6,7 @@ using PortfolioBackend.DAL.Repositories.Abstracts;
 using PortfolioBackend.DAL.Repositories.Concretes.EFCore;
 using PortfolioBackend.Entities;
 using PortfolioBackend.Entities.DTOs.Abouts;
+using PortfolioBackend.Entities.DTOs.ContactForms;
 using PortfolioBackend.Entities.DTOs.Contacts;
 using System.Net;
 
@@ -28,6 +29,15 @@ namespace PortfolioBackend.Controllers
             GetContactDto getContactDto = _mapper.Map<GetContactDto>(result);
             if (result is null) return NotFound();
             return Ok(getContactDto);
+        }
+        [HttpGet("GetContacts")]
+        public async Task<IActionResult> GetContacts()
+        {
+            var result = await _contactRepository.GetAllAsync();
+            List<GetContactDto> getContactDtos = _mapper.Map<List<GetContactDto>>(result);
+            if (result.Count == 0) return NotFound();
+            return Ok(getContactDtos);
+
         }
         [Authorize]
         [HttpPost]
