@@ -22,7 +22,6 @@ namespace PortfolioBackend.Repositories.Configurations
                 .IsRequired()
                 .HasMaxLength(200)
                 .HasDefaultValue("Servisinizin  haqqinda qisa sekilde yazilmalidir");
-
         }
     }
 }
