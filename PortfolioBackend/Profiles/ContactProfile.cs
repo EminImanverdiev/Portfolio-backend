@@ -10,7 +10,7 @@ namespace PortfolioBackend.Profiles
         public ContactProfile()
         {
             CreateMap<Contact, GetContactDto>();
-            CreateMap<CreateContactDto, Contact>();
+            CreateMap<UpdateContactDto, Contact>();
             CreateMap<UpdateContactDto, Contact>();
         }
     }

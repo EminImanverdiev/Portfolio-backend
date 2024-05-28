@@ -1,10 +1,7 @@
 ﻿namespace PortfolioBackend.Entities.DTOs.Testimonials
 {
-    public class CreateTestimonialDto
+    public class CreateTestimonialDto:TestimonialDtoBase
     {
-        public string? TestimonialTitle { get; set; }
-        public string? TestimonialContent { get; set; }
-        public string? FullName { get; set; }
-        public string? Job { get; set; }
+      
     }
 }

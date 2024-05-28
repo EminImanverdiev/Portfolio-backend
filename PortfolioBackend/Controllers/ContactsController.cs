@@ -41,7 +41,7 @@ namespace PortfolioBackend.Controllers
         }
         [Authorize]
         [HttpPost]
-        public async Task<IActionResult> Create(CreateContactDto contactDto)
+        public async Task<IActionResult> Create(UpdateContactDto contactDto)
         {
             Contact contact = _mapper.Map<Contact>(contactDto);
             await _contactRepository.AddAsync(contact);

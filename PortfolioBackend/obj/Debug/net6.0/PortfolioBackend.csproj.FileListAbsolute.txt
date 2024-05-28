@@ -69,6 +69,13 @@ D:\Workspace\Portfolio-Website-Back\PortfolioBackend\obj\Debug\net6.0\PortfolioB
 D:\Workspace\Portfolio-Website-Back\PortfolioBackend\obj\Debug\net6.0\ref\PortfolioBackend.dll
 D:\Workspace\Portfolio-Website-Back\PortfolioBackend\bin\Debug\net6.0\AutoMapper.dll
 D:\Workspace\Portfolio-Website-Back\PortfolioBackend\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.AssemblyInfo.cs
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\appsettings.json
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\libman.json
@@ -83,6 +90,7 @@ C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Fluent
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Humanizer.dll
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -97,6 +105,7 @@ C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Micros
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
@@ -127,13 +136,6 @@ C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\runtim
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.csproj.AssemblyReference.cache
-C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.AssemblyInfoInputs.cache
-C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.AssemblyInfo.cs
-C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.csproj.CoreCompileInputs.cache
-C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\staticwebassets\msbuild.PortfolioBackend.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\staticwebassets\msbuild.build.PortfolioBackend.props
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.PortfolioBackend.props
@@ -148,5 +150,3 @@ C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\refint
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.pdb
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.genruntimeconfig.cache
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\ref\PortfolioBackend.dll
-C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
