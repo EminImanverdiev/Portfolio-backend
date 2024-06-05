@@ -150,3 +150,4 @@ C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\refint
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.pdb
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\PortfolioBackend.genruntimeconfig.cache
 C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\obj\Debug\net6.0\ref\PortfolioBackend.dll
+C:\Users\User\Desktop\Portfolio-backend\PortfolioBackend\bin\Debug\net6.0\PortfolioBackend.staticwebassets.runtime.json

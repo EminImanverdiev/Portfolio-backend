@@ -41,8 +41,6 @@ namespace PortfolioBackend.Repositories.Configurations
             builder.Property(a=>a.Freelance)
                 .IsRequired()
                 .HasMaxLength(50); 
-
-
         }
     }
 }

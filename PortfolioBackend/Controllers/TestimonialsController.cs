@@ -41,7 +41,7 @@ namespace PortfolioBackend.Controllers
 
         }
         [HttpPost]
-        [Authorize]
+        //[Authorize]
         public async Task<IActionResult> Create(CreateTestimonialDto testimonialDto)
         {
             Testimonial testimonial = _mapper.Map<Testimonial>(testimonialDto);
@@ -59,7 +59,7 @@ namespace PortfolioBackend.Controllers
             await _testimonialRepository.SaveAsync();
             return NoContent();
         }
-        [HttpDelete]
+        [HttpDelete("Delete/{Id}")]
         public async Task<IActionResult> Delete(int Id)
         {
             if (_testimonialRepository.GetAllAsync() == null)

@@ -32,8 +32,8 @@ namespace PortfolioBackend.Controllers
             if (result is null) return NotFound();
             return Ok(getContactFormDto);
         }
-        [HttpGet("ContactForms")]
-        public async Task<IActionResult> ContactForms()
+        [HttpGet("GetContactForms")]
+        public async Task<IActionResult> GetContactForms()
         {
             var result = await _contactFormRepository.GetAllAsync();
             List<GetContactFormDto> getContactFormDtos = _mapper.Map<List<GetContactFormDto>>(result);
@@ -50,7 +50,7 @@ namespace PortfolioBackend.Controllers
             await _contactFormRepository.SaveAsync();
             return NoContent();
         }
-        [HttpDelete]
+        [HttpDelete("Delete/{Id}")]
         public async Task<IActionResult> Delete(int Id)
         {
             if (_contactFormRepository.GetAllAsync() == null)

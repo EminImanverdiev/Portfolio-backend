@@ -50,6 +50,7 @@ namespace PortfolioBackend.Controllers
             await _serviceRepository.SaveAsync();
             return NoContent();
         }
+
         [HttpPut]
         public async Task<IActionResult> Update(UpdateServiceDto serviceDto)
         {
@@ -61,7 +62,7 @@ namespace PortfolioBackend.Controllers
             await _serviceRepository.SaveAsync();
             return NoContent();
         }
-        [HttpDelete]
+        [HttpDelete("De lete/{Id}")]
         public async Task<IActionResult> Delete(int Id)
         {
             if (_serviceRepository.GetAllAsync() == null)

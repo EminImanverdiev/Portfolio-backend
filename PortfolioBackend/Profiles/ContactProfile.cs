@@ -1,6 +1,5 @@
 ﻿using AutoMapper;
 using PortfolioBackend.Entities;
-using PortfolioBackend.Entities.DTOs.Abouts;
 using PortfolioBackend.Entities.DTOs.Contacts;
 
 namespace PortfolioBackend.Profiles
@@ -10,7 +9,7 @@ namespace PortfolioBackend.Profiles
         public ContactProfile()
         {
             CreateMap<Contact, GetContactDto>();
-            CreateMap<UpdateContactDto, Contact>();
+            CreateMap<CreateContactDto, Contact>();
             CreateMap<UpdateContactDto, Contact>();
         }
     }

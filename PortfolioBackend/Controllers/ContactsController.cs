@@ -39,14 +39,14 @@ namespace PortfolioBackend.Controllers
             return Ok(getContactDtos);
 
         }
-        [Authorize]
+        //[Authorize]
         [HttpPost]
-        public async Task<IActionResult> Create(UpdateContactDto contactDto)
+        public async Task<IActionResult> Create(CreateContactDto contactDto)
         {
             Contact contact = _mapper.Map<Contact>(contactDto);
             await _contactRepository.AddAsync(contact);
             await _contactRepository.SaveAsync();
-            return NoContent();
+            return CreatedAtAction(nameof(GetContact), new { Id = contact.ContactId }, contact);
         }
         [HttpPut]
         public async Task<IActionResult> Update(UpdateContactDto contactDto)
@@ -58,7 +58,7 @@ namespace PortfolioBackend.Controllers
             await _contactRepository.SaveAsync();
             return NoContent();
         }
-        [HttpDelete]
+        [HttpDelete("Delete/{Id}")]
         public async Task<IActionResult> Delete(int Id)
         {
             if (_contactRepository.GetAllAsync() == null)

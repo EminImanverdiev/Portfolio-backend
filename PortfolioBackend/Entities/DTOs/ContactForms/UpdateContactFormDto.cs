@@ -2,7 +2,6 @@
 {
     public class UpdateContactFormDto:ContactFormDtoBase
     {
-        public int ContactFormId { get; set; }
     
     }
 }

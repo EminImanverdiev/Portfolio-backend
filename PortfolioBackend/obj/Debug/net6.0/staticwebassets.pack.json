@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\photos\\Nitro_Wallpaper_01_3840x2400.jpg",
+      "PackagePath": "staticwebassets\\photos\\Nitro_Wallpaper_01_3840x2400.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\photos\\Nitro_Wallpaper_02_3840x2400.jpg",
+      "PackagePath": "staticwebassets\\photos\\Nitro_Wallpaper_02_3840x2400.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\photos\\Nitro_Wallpaper_03_3840x2400.jpg",
+      "PackagePath": "staticwebassets\\photos\\Nitro_Wallpaper_03_3840x2400.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\photos\\Nitro_Wallpaper_04_3840x2400.jpg",
+      "PackagePath": "staticwebassets\\photos\\Nitro_Wallpaper_04_3840x2400.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\photos\\Nitro_Wallpaper_05_3840x2400.jpg",
+      "PackagePath": "staticwebassets\\photos\\Nitro_Wallpaper_05_3840x2400.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\photos\\Nitro_Wallpaper_06_3840x2400.jpg",
+      "PackagePath": "staticwebassets\\photos\\Nitro_Wallpaper_06_3840x2400.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\uploads\\Emin-Imanverdiyev-Back.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Emin-Imanverdiyev-Back.pdf"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PortfolioBackend.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.PortfolioBackend.props",
+      "PackagePath": "build\\PortfolioBackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.PortfolioBackend.props",
+      "PackagePath": "buildMultiTargeting\\PortfolioBackend.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.PortfolioBackend.props",
+      "PackagePath": "buildTransitive\\PortfolioBackend.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

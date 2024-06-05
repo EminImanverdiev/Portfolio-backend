@@ -1,6 +1,6 @@
 ﻿namespace PortfolioBackend.Entities.DTOs.Contacts
 {
-    public class GetContactDto
+    public class GetContactDto:ContactDtoBase
     {
       
     }

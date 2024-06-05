@@ -19,5 +19,6 @@ namespace PortfolioBackend.Repositories.EFcore
         public DbSet<ContactForm> ContactForms { get; set; }
         public DbSet<Service> Services { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
+        public DbSet<Resume> Resumes { get; set; }
     }
 }
