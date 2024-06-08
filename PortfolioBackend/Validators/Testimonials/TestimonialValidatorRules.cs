@@ -6,7 +6,7 @@ namespace PortfolioBackend.Validators.Testimonials
 {
     public static class TestimonialValidatorRules
     {
-        public static void ApplyCommonRules<T>(this AbstractValidator<T> validator) where T : TestimonialDtoBase
+        public static void ApplyCommonRules<T>(this AbstractValidator<T> validator) where T : FactDtoBase
         {
             validator.RuleFor(t=>t.TestimonialTitle)
                 .NotEmpty().WithMessage("Title must not be empty!")

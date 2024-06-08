@@ -360,6 +360,29 @@ namespace PortfolioBackend.Migrations
                     b.ToTable("ContactForms");
                 });
 
+            modelBuilder.Entity("PortfolioBackend.Entities.Fact", b =>
+                {
+                    b.Property<int>("FactId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("FactId"), 1L, 1);
+
+                    b.Property<float>("FactCount")
+                        .HasColumnType("real");
+
+                    b.Property<string>("FactName")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)")
+                        .HasDefaultValue("Burada Faktinizin adini daxil etmelisiniz...");
+
+                    b.HasKey("FactId");
+
+                    b.ToTable("Facts");
+                });
+
             modelBuilder.Entity("PortfolioBackend.Entities.Resume", b =>
                 {
                     b.Property<int>("Id")
@@ -416,6 +439,31 @@ namespace PortfolioBackend.Migrations
                     b.HasKey("ServiceId");
 
                     b.ToTable("Services");
+                });
+
+            modelBuilder.Entity("PortfolioBackend.Entities.Skill", b =>
+                {
+                    b.Property<int>("SkillId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SkillId"), 1L, 1);
+
+                    b.Property<string>("SkillName")
+                        .IsRequired()
+                        .ValueGeneratedOnAdd()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)")
+                        .HasDefaultValue("Burada Bacariginin adini daxil etmelisiniz...");
+
+                    b.Property<float>("SkillPercent")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("real")
+                        .HasDefaultValue(10f);
+
+                    b.HasKey("SkillId");
+
+                    b.ToTable("Skills");
                 });
 
             modelBuilder.Entity("PortfolioBackend.Entities.Testimonial", b =>

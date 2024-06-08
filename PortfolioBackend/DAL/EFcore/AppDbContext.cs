@@ -20,5 +20,7 @@ namespace PortfolioBackend.Repositories.EFcore
         public DbSet<Service> Services { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
         public DbSet<Resume> Resumes { get; set; }
+        public DbSet<Fact> Facts { get; set; }
+        public DbSet<Skill> Skills { get; set; }
     }
 }

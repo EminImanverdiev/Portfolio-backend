@@ -3,7 +3,7 @@ using PortfolioBackend.Entities.DTOs.Testimonials;
 
 namespace PortfolioBackend.Validators.Testimonials
 {
-    public class UpdateTestimonialDtoValidator : AbstractValidator<UpdateTestimonialDto>
+    public class UpdateTestimonialDtoValidator : AbstractValidator<UpdateFactDto>
     {
         public UpdateTestimonialDtoValidator()
         {

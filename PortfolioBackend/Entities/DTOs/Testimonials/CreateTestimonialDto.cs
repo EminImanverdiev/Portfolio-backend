@@ -1,6 +1,6 @@
 ﻿namespace PortfolioBackend.Entities.DTOs.Testimonials
 {
-    public class CreateTestimonialDto:TestimonialDtoBase
+    public class CreateFactDto:FactDtoBase
     {
       
     }

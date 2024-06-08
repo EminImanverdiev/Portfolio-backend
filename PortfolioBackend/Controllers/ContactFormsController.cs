@@ -11,6 +11,7 @@ using PortfolioBackend.Entities.DTOs.Abouts;
 
 namespace PortfolioBackend.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class ContactFormsController : ControllerBase

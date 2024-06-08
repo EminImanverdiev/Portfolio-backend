@@ -18,7 +18,6 @@ namespace PortfolioBackend
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
             builder.Services.AddControllers().AddFluentValidation(opt =>
             {
                 opt.ImplicitlyValidateChildProperties = true;
@@ -26,11 +25,9 @@ namespace PortfolioBackend
                 opt.RegisterValidatorsFromAssembly(Assembly.GetExecutingAssembly());
             });
 
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
-            // CORS siyas?tini ?lav? edin
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowSpecificOrigin",
@@ -55,7 +52,6 @@ namespace PortfolioBackend
             app.UseHttpsRedirection();
 
             app.UseStaticFiles(); 
-            // CORS siyas?tini istifad? edin
             app.UseCors("AllowSpecificOrigin");
 
             app.UseAuthentication();

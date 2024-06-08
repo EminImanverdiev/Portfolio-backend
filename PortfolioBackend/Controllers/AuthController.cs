@@ -84,21 +84,21 @@ namespace PortfolioBackend.Controllers
             {
                 claims.Add(new Claim(ClaimTypes.Role, role));
             }
+            var time = DateTime.UtcNow.AddMinutes((_tokenOption.AccessTokenExpiration));
             JwtPayload payload=new JwtPayload(
                 issuer:_tokenOption.Issuer,
                 audience:_tokenOption.Audience,
                 claims:claims,
                 notBefore:DateTime.UtcNow,
-                expires:DateTime.UtcNow.AddMinutes((_tokenOption.AccessTokenExpiration))
+                expires: time
                 );
             JwtSecurityToken securityToken = new JwtSecurityToken(header, payload);
             JwtSecurityTokenHandler handler = new JwtSecurityTokenHandler();
             string token=handler.WriteToken(securityToken);
             return Ok(
                  new { 
-                    token = token,
-                    expires=DateTime.UtcNow.AddMinutes(_tokenOption.AccessTokenExpiration)
-                 
+                    token,
+                    expires= time.Day
                  }
                 );
 

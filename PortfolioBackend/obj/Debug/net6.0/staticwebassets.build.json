@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OwwHIpOFty8dVN/cO48GokKgUlXvy7YxwQRSsrKy7PM=",
+  "Hash": "dAFU0Gjc/L4Y9RShKADHi3wNsAUE/ivu2W2kVfaDXig=",
   "Source": "PortfolioBackend",
   "BasePath": "_content/PortfolioBackend",
   "Mode": "Default",
@@ -16,6 +16,23 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\photos\\my.png",
+      "SourceId": "PortfolioBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\",
+      "BasePath": "_content/PortfolioBackend",
+      "RelativePath": "photos/my.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\photos\\my.png"
+    },
     {
       "Identity": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\photos\\Nitro_Wallpaper_01_3840x2400.jpg",
       "SourceId": "PortfolioBackend",
@@ -119,12 +136,12 @@
       "OriginalItemSpec": "wwwroot\\photos\\Nitro_Wallpaper_06_3840x2400.jpg"
     },
     {
-      "Identity": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\uploads\\Emin-Imanverdiyev-Back.pdf",
+      "Identity": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\photos\\WIN_20231213_10_46_38_Pro.jpg",
       "SourceId": "PortfolioBackend",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\",
       "BasePath": "_content/PortfolioBackend",
-      "RelativePath": "uploads/Emin-Imanverdiyev-Back.pdf",
+      "RelativePath": "photos/WIN_20231213_10_46_38_Pro.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -133,7 +150,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\uploads\\Emin-Imanverdiyev-Back.pdf"
+      "OriginalItemSpec": "wwwroot\\photos\\WIN_20231213_10_46_38_Pro.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\uploads\\Resume.pdf",
+      "SourceId": "PortfolioBackend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\",
+      "BasePath": "_content/PortfolioBackend",
+      "RelativePath": "uploads/Resume.pdf",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Resume.pdf"
     }
   ]
 }

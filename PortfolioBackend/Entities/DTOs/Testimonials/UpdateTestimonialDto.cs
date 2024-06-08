@@ -1,8 +1,7 @@
 ﻿namespace PortfolioBackend.Entities.DTOs.Testimonials
 {
-    public class UpdateTestimonialDto:TestimonialDtoBase
+    public class UpdateFactDto:FactDtoBase
     {
-        public int TestimonialId { get; set; }
     
     }
 }

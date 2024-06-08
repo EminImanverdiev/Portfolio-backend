@@ -8,9 +8,9 @@ namespace PortfolioBackend.Profiles
     {
         public TestimonialProfile()
         {
-            CreateMap<Testimonial, GetTestimonialDto>();
-            CreateMap<UpdateTestimonialDto, Testimonial>();
-            CreateMap<CreateTestimonialDto, Testimonial>();
+            CreateMap<Testimonial, GetFactDto>();
+            CreateMap<UpdateFactDto, Testimonial>();
+            CreateMap<CreateFactDto, Testimonial>();
         }
     }
 }

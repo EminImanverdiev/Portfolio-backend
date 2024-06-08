@@ -25,8 +25,16 @@
       "PackagePath": "staticwebassets\\photos\\Nitro_Wallpaper_06_3840x2400.jpg"
     },
     {
-      "Id": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\uploads\\Emin-Imanverdiyev-Back.pdf",
-      "PackagePath": "staticwebassets\\uploads\\Emin-Imanverdiyev-Back.pdf"
+      "Id": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\photos\\WIN_20231213_10_46_38_Pro.jpg",
+      "PackagePath": "staticwebassets\\photos\\WIN_20231213_10_46_38_Pro.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\photos\\my.png",
+      "PackagePath": "staticwebassets\\photos\\my.png"
+    },
+    {
+      "Id": "C:\\Users\\User\\Desktop\\Portfolio-backend\\PortfolioBackend\\wwwroot\\uploads\\Resume.pdf",
+      "PackagePath": "staticwebassets\\uploads\\Resume.pdf"
     },
     {
       "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.PortfolioBackend.Microsoft.AspNetCore.StaticWebAssets.props",

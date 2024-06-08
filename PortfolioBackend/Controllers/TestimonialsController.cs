@@ -9,6 +9,7 @@ using PortfolioBackend.Entities.DTOs.Testimonials;
 
 namespace PortfolioBackend.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class TestimonialsController : ControllerBase
@@ -26,7 +27,7 @@ namespace PortfolioBackend.Controllers
         public async Task<IActionResult> GetTestimonials()
         {
             var result = await _testimonialRepository.GetAllAsync();
-            List<GetTestimonialDto> getTestimonialDtos = _mapper.Map<List<GetTestimonialDto>>(result);
+            List<GetFactDto> getTestimonialDtos = _mapper.Map<List<GetFactDto>>(result);
             if (result.Count == 0) return NotFound();
             return Ok(getTestimonialDtos);
 
@@ -35,14 +36,13 @@ namespace PortfolioBackend.Controllers
         public async Task<IActionResult> GetTestimonial(int Id)
         {
             var result = await _testimonialRepository.GetAsync(a => a.TestimonialId == Id);
-            GetTestimonialDto getTestimonialDto = _mapper.Map<GetTestimonialDto>(result);
+            GetFactDto getTestimonialDto = _mapper.Map<GetFactDto>(result);
             if (result is null) return NotFound();
             return Ok(getTestimonialDto);
 
         }
         [HttpPost]
-        //[Authorize]
-        public async Task<IActionResult> Create(CreateTestimonialDto testimonialDto)
+        public async Task<IActionResult> Create(CreateFactDto testimonialDto)
         {
             Testimonial testimonial = _mapper.Map<Testimonial>(testimonialDto);
             await _testimonialRepository.AddAsync(testimonial);
@@ -50,7 +50,7 @@ namespace PortfolioBackend.Controllers
             return NoContent();
         }
         [HttpPut]
-        public async Task<IActionResult> Update(UpdateTestimonialDto testimonialDto)
+        public async Task<IActionResult> Update(UpdateFactDto testimonialDto)
         {
             if (!await AboutExists(testimonialDto.TestimonialId)) return NotFound();
 
